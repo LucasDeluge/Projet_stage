@@ -1,3 +1,16 @@
+/* .nav-body {
+  background-image: url(./logo.jpg);
+  background-repeat: no-repeat;
+  background: cover;
+} */
+/* .nav-text {
+  display: block;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  color: black;
+} */
+
 body {
     background: linear-gradient(to top, rgba(255, 175, 128, 0.5), rgba(0, 0, 0, 0.4)), url('https://www.liledesolidarite.fr/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-22-at-14.02.42-1024x768.jpeg')  no-repeat center / cover;
     height: 100vh;
