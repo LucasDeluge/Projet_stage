@@ -50,7 +50,14 @@
 
         </div>
       </div>
+<<<<<<< HEAD
     </div>
+=======
+      </div>
+    </nav>
+  </header>
+
+>>>>>>> e4cdf1baf36d82c08516b47becc7c4421ece4c44
   </nav>
 </header>
 <div class="home">
