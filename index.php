@@ -52,15 +52,10 @@
 
         </div>
       </div>
-      <<<<<<< HEAD </div>
+      </div>
     </nav>
   </header>
-  <div>
-    <h1>Présentation de l'association</h1>
-    <p>
-      L’île de solidarité intervient auprés des sans abris,sans domiciles fixes et réfugiés.
-      =======
-  </div>
+
   </nav>
   </header>
   <div class="home">
@@ -71,7 +66,6 @@
     <br>
     <p class="text">
       L’île de solidarité est une association bénévole intervenant auprès de toutes personnes sans abris ou dans le besoin.
-      >>>>>>> b89976543fb54c676e744196d38dadba29535adb
       <br>
       Apolitique et non confessionnelle, celle-ci est ouverte à toute personne désireuse d'apporter son aide, sans distinction culturelle, générationnelle et sociale.
       <br>
