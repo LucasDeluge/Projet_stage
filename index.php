@@ -53,7 +53,7 @@
     </div>
   </nav>
 </header>
-<div>
+<div class="home">
 <h1>Présentation de l'association</h1>
     <p>
 L’île de solidarité intervient auprés des sans abris,sans domiciles fixes et réfugiés.
@@ -69,6 +69,7 @@ Composée uniquement de bénévoles, l’île de solidarité a su trouver sa pla
 Afin de rester fidèle a ses valeurs humaines, nous comptons beaucoup sur vous pour nous aider à continuer notre combat.
     </p>
     </div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
