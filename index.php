@@ -23,41 +23,38 @@
         <div class="navbar-collapse collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Actualités
+              <a class="nav-link active" href="./actualites.php">Actualités
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Participation</a> 
+              <a class="nav-link" href="./participation.php">Participation</a> 
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Donation</a>
+              <a class="nav-link" href="./donation.php">Donation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mention press</a>
+              <a class="nav-link" href="./press.php">Mention press</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Partenariat</a>
+              <a class="nav-link" href="./partenariat.php">Partenariat</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="./contact.php">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Espace administrateur</a>
+              <a class="nav-link" href="./admin.php">Espace administrateur</a>
             </li>
 
           </ul>
 
         </div>
       </div>
-<<<<<<< HEAD
     </div>
-=======
       </div>
     </nav>
   </header>
 
->>>>>>> e4cdf1baf36d82c08516b47becc7c4421ece4c44
   </nav>
 </header>
 <div class="home">
