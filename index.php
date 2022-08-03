@@ -20,7 +20,7 @@
 
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarColor01" style="">
+        <div class="navbar-collapse collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#">Actualités
@@ -50,18 +50,11 @@
 
         </div>
       </div>
-<<<<<<< HEAD
     </div>
   </nav>
 </header>
 <div class="home">
 <h1>Présentation de l'association</h1>
-=======
-    </nav>
-  </header>
-  <div>
-    <h1>Présentation de l'association</h1>
->>>>>>> 6637d1af679fcf805eeaf7007a8dca01870aafe4
     <p>
       L’île de solidarité intervient auprés des sans abris,sans domiciles fixes et réfugiés.
       <br>
@@ -75,12 +68,8 @@
       <br>
       Afin de rester fidèle a ses valeurs humaines, nous comptons beaucoup sur vous pour nous aider à continuer notre combat.
     </p>
-<<<<<<< HEAD
     </div>
 
-=======
-  </div>
->>>>>>> 6637d1af679fcf805eeaf7007a8dca01870aafe4
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
