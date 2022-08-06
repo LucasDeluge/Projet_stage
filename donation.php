@@ -84,9 +84,8 @@
 <ul> Merci de votre générosité ! </ul>
 
 
-commantaire marche pas
-chercher a inserer la video
-
+<!-- Test lien vidéo  -->
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Flilede.solidarite%2Fvideos%2F542077679590573%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 <h1> Usage des derniers dons : </h1>
 
 <p> Achat d’un camion pour collecter les denrées alimentaires auprès des donateurs, commerces, etc .. et acheminer ces denrées sur les lieux de distributions une fois conditionnées ou préparées. </p>
