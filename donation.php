@@ -51,6 +51,7 @@
 </header>
 
 <body>
+  <div class="don">
   <h1>Faites un don</h1>
   <p>Vous pouvez nous aider !
 
@@ -85,14 +86,12 @@
 
 
 <!-- Test lien vidéo  -->
-    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Flilede.solidarite%2Fvideos%2F542077679590573%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 <h1> Usage des derniers dons : </h1>
 
 <p> Achat d’un camion pour collecter les denrées alimentaires auprès des donateurs, commerces, etc .. et acheminer ces denrées sur les lieux de distributions une fois conditionnées ou préparées. </p>
 
-
-
-
+</div>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flilede.solidarite%2Fvideos%2F542077679590573%2F&width=500&show_text=false&appId=2340366882651884&height=889" width="500" height="689" controls="1" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
