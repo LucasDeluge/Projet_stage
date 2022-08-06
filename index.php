@@ -24,13 +24,11 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link active" href="./actualites.php">Actualités
-
+                <span class="visually-hidden">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-
-              <a class="nav-link" href="./participation.php">Participation</a>
-
+              <a class="nav-link" href="./participation.php">Participation</a> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./donation.php">Donation</a>
@@ -52,18 +50,19 @@
 
         </div>
       </div>
+    </div>
       </div>
     </nav>
   </header>
 
   </nav>
-  </header>
-  <div class="home">
-    <br>
-    <br>
-    <h1>Présentation</h1>
-    <br>
-    <br>
+</header>
+<div class="home">
+<br>
+<br>
+<h1>Présentation</h1>
+<br>
+<br>
     <p class="text">
       L’île de solidarité est une association bénévole intervenant auprès de toutes personnes sans abris ou dans le besoin.
       <br>
@@ -77,7 +76,7 @@
       <br>
       Afin de rester fidèle à ses valeurs humaines, nous comptons énormément sur votre soutien pour nous aider à continuer notre combat.
     </p>
-  </div>
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
