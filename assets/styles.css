@@ -12,20 +12,26 @@
 } */
 
 body {
-    background: linear-gradient(to top, rgba(255, 175, 128, 0.5), rgba(0, 0, 0, 0.4)), url('https://www.liledesolidarite.fr/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-22-at-14.02.42-1024x768.jpeg')  no-repeat center / cover;
-    height: 100vh;
+  background: linear-gradient(
+      to top,
+      rgba(176, 78, 10, 0.4),
+      rgba(101, 61, 17, 0.4)
+    ),
+    url("https://www.liledesolidarite.fr/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-22-at-14.02.42-1024x768.jpeg")
+      no-repeat center / cover;
+  height: 100vh;
 }
 
 .home h1 {
-    text-align: center;
-    text-decoration: underline;
-    text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .home p {
-    line-height: 2.5;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 2em;
-    margin-right: 2em;
+  line-height: 2.5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 2em;
+  margin-right: 2em;
 }
