@@ -51,12 +51,12 @@
 </header>
 
 <body>
-  <h1>faite un don</h1>
-  <p>Vous pouvez nous aider!
+  <h1>Faites un don</h1>
+  <p>Vous pouvez nous aider !
 
-    Afin de nous aider dans nos actions, vous pouvez nous faire un don financier!
+    Afin de nous aider dans nos actions, vous pouvez nous faire un don financier !
 
-    Vous recevrez si vous le souhaitez un reçu pour déduction fiscale.
+    Vous recevrez, si vous le souhaitez, un reçu pour déduction fiscale.
     100€ de dons vous reviendra au final à 34€ après déduction fiscale.</p>
 </body>
 
@@ -66,7 +66,7 @@
 <ul>10€ => 3,40€ après déduction fiscale.</ul>
 
 <p>Les dons au profit de l’association L’Île de Solidarité ouvrent droit à une réduction d’impôt sur le revenu de 66 % du montant versé, dans la limite de 20 % du revenu imposable.
-  L’association L’Île de Solidarité est une association d’intérêt général qui est habilité à éditer un reçu fiscal que vous recevrez automatiquement suite à votre don.</p>
+  L’association L’Île de Solidarité est une association d’intérêt général qui est habilitée à éditer un reçu fiscal que vous recevrez automatiquement suite à votre don.</p>
 
 
 <p>Vous pouvez effectuer un don en cliquant
