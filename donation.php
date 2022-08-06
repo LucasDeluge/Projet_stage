@@ -60,10 +60,13 @@
     100€ de dons vous reviendra au final à 34€ après déduction fiscale.</p>
 </body>
 
-<ul>50€ => 17€ après déduction fiscale.</ul>
-<ul>30€ => 10,20€ après déduction fiscale.</ul>
-<ul>20€ => 6,80€ après déduction fiscale.</ul>
-<ul>10€ => 3,40€ après déduction fiscale.</ul>
+<ul>
+  <li> 50€ => 17€ après déduction fiscale.</li>
+  <li>30€ => 10,20€ après déduction fiscale.</li>
+  <li>20€ => 6,80€ après déduction fiscale.</li>
+  <li>10€ => 3,40€ après déduction fiscale.</li>
+
+</ul>
 
 <p>Les dons au profit de l’association L’Île de Solidarité ouvrent droit à une réduction d’impôt sur le revenu de 66 % du montant versé, dans la limite de 20 % du revenu imposable.
   L’association L’Île de Solidarité est une association d’intérêt général qui est habilité à éditer un reçu fiscal que vous recevrez automatiquement suite à votre don.</p>
@@ -78,10 +81,12 @@
   Adresse et ordre :
 </p>
 
-<ul> L’île de solidarité </ul>
-<ul> 13 rue de rivoli </ul>
-<ul> 59800 LILLE-fives </ul>
-<ul> Merci de votre générosité ! </ul>
+<ul>
+  <li> L’île de solidarité </li>
+  <li> 13 rue de rivoli </li>
+  <li> 59800 LILLE-fives </li>
+  <li> Merci de votre générosité ! </li>
+</ul>
 
 
 commantaire marche pas
