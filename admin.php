@@ -51,7 +51,25 @@
 </header>
 
 <body>
-  <h1>test admin</h1>
+  <h1>cette espace est reservée au bénévole</h1>
+
+  <p>Cette espace est protégée par un mot de passe. Pour y acceder, veuillez saisir votre mot de passe ci-dessous :</p>
+
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="entrer votre mot de passe">
+    <label for="floatingPassword">mot de passe</label>
+  </div>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeEiKIgAAAAAJYQrjb8ilZIxYEsYwrlPr1aUeCh"></script>
+  <script>
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LeEiKIgAAAAAJYQrjb8ilZIxYEsYwrlPr1aUeCh', {
+        action: 'homepage'
+      }).then(function(token) {
+        document.getElementById('recaptchaResponse').value = token
+      });
+    });
+  </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 

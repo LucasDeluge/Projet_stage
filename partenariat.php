@@ -51,7 +51,27 @@
 </header>
 
 <body>
-  <h1>test Partenariat</h1>
+  <h1>Nos partenaires</h1>
+
+  <ul>
+    <li>Mairie de Lille</li>
+    <ul>
+      <a href="https://www.lille.fr/Votre-Mairie/Lille-en-bref/Une-ville-attentive-a-chacun/La-solidarite">La solidarité</a>
+    </ul>
+  </ul>
+  <ul>
+    <li>Fédération des Acteurs de la solidarité</li>
+    <ul>
+      <a href="https://www.federationsolidarite.org/">Contre les exclusions pour la solidarité </a>
+    </ul>
+  </ul>
+  <ul>
+    <li>Engagement solidaire</li>
+    <ul>
+      <a href="https://www.engagement-solidaire.fr/">Au coeur de la solidarité</a>
+    </ul>
+  </ul>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
