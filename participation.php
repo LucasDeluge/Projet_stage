@@ -51,8 +51,60 @@
 </header>
 
 <body>
-  <h1>test participation</h1>
+  <h1>Bénévolat</h1>
+
+  <p>Il n’existe pas de d’engagement formel au sein de l’Ile de Solidarité, uniquement un engagement moral : Je veux aider.
+
+    Chacun est le bienvenu, avec sa bonne humeur, son esprit constructif, et un minimum de sérieux.
+
+    Nous ne serons jamais « trop », l’île de solidarité compte aujourd’hui une centaine de bénévoles. Issus de tout horizons, tout milieux, mais partageant des mêmes valeurs. Chacun donne 1 heure, 1 jour, sans jugement. Les petits ruisseaux font les grandes rivières.
+
+    Si vous souhaitez nous rejoindre, c’est avec plaisir, nous vous exposerons en quoi vous pourrez être utile à la société à travers nous :</p>
+  <h1>participer</h1>
+
+  <form>
+    <!--nom -->
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">nom (obligatoire)</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre nom">
+
+    </div>
+    <!--email -->
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">adresse mail (obligatoire)</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre mail">
+
+    </div>
+    <!--objet -->
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">objet</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="objet de votre mail">
+
+    </div>
+
+    <!--texte -->
+    <div class="form-group">
+      <label for="exampleTextarea" class="form-label mt-4">votre message</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+    <!--bouton -->
+    <div id="btn-conect-container">
+      <button type="submit" class="btn btn-danger mt-4">valider mon inscription</button>
+
+
+      <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+  </form>
 </body>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeEiKIgAAAAAJYQrjb8ilZIxYEsYwrlPr1aUeCh"></script>
+<script>
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LeEiKIgAAAAAJYQrjb8ilZIxYEsYwrlPr1aUeCh', {
+      action: 'homepage'
+    }).then(function(token) {
+      document.getElementById('recaptchaResponse').value = token
+    });
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </html>
