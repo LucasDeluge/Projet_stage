@@ -33,7 +33,7 @@ try {
 
     //Attachments
 //    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    $mail->addAttachment('');    //Optional name
+    $mail->addAttachment('./assets/logo.jpg', 'logo.jpg');    //Optional name
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
