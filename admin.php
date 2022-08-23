@@ -51,9 +51,9 @@
 </header>
 
 <body>
-  <h1>cette espace est reservée au bénévole</h1>
+  <h1>Espace réservé aux bénévoles</h1>
 
-  <p>Cette espace est protégée par un mot de passe. Pour y acceder, veuillez saisir votre mot de passe ci-dessous :</p>
+  <p>Cet espace est protégé par un mot de passe. Pour y accéder, veuillez saisir votre mot de passe ci-dessous :</p>
 
   <div class="form-floating">
     <input type="password" class="form-control" id="floatingPassword" placeholder="entrer votre mot de passe">

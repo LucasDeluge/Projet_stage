@@ -65,31 +65,31 @@
   <form>
     <!--nom -->
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">nom (obligatoire)</label>
+      <label for="exampleInputEmail1" class="form-label mt-4">Nom (obligatoire)</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre nom">
 
     </div>
     <!--email -->
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">adresse mail (obligatoire)</label>
+      <label for="exampleInputEmail1" class="form-label mt-4">Adresse mail (obligatoire)</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre mail">
 
     </div>
     <!--objet -->
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">objet</label>
+      <label for="exampleInputEmail1" class="form-label mt-4">Objet</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="objet de votre mail">
 
     </div>
 
     <!--texte -->
     <div class="form-group">
-      <label for="exampleTextarea" class="form-label mt-4">votre message</label>
+      <label for="exampleTextarea" class="form-label mt-4">Votre message</label>
       <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
     </div>
     <!--bouton -->
     <div id="btn-conect-container">
-      <button type="submit" class="btn btn-danger mt-4">valider mon inscription</button>
+      <button type="submit" class="btn btn-danger mt-4">Valider mon inscription</button>
 
 
       <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
