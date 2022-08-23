@@ -1,3 +1,10 @@
+<?php
+session_start();
+require_once './assets/pdo.php'
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,11 +62,40 @@
 
   <p>Cette espace est protégée par un mot de passe. Pour y acceder, veuillez saisir votre mot de passe ci-dessous :</p>
 
-  <div class="form-floating">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="entrer votre mot de passe">
-    <label for="floatingPassword">mot de passe</label>
-  </div>
+  <form action="" id="connexion" method="post">
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="entrer votre mot de passe">
+      <label for="floatingPassword">mot de passe</label>
+    </div>
+    <button type="button" class="btn btn-primary">se conneter</button>
+    <?php
+    $email = $_POST['email'] ?? null;
+    $passeword = $_POST['passeword'] ?? null;
 
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) !== false && $passeword !== null) {
+      require_once('./asset/pdo.php');
+      $passeword = htmlspecialchars($passeword);
+
+      $asso = $pdo->prepare("select * from utilisateur where mail = :email");
+      if ($asso->execute([
+        ':email' => $email
+      ])) {
+
+        if ($asso->rowCount() === 1) {
+          // je le lie a ma var $user
+          $user = $asso->fetch();
+          //mdp identique?
+          if (password_verify($passeword, $user['passeword'])) {
+            echo '<div id="nav-bas"> bonjour  ' . $user['nom'] . '<a href="./article.php"  id="lien-conect"> : se diriger vers article</a></div>';
+          }
+        } else {
+          throw new Exception('erreur avec le mail ou le mdp');
+        }
+      }
+    }
+    ?>
+  </form>
   <script src="https://www.google.com/recaptcha/api.js?render=6LeEiKIgAAAAAJYQrjb8ilZIxYEsYwrlPr1aUeCh"></script>
   <script>
     grecaptcha.ready(function() {
