@@ -69,6 +69,10 @@
     <ol>
       <li><a href="https://vozer.fr/2020/11/12/pour-sa-distribution-quotidienne-de-repas-lasso-lile-de-solidarite-fait-un-appel-aux-dons-alimentaires/">Pour sa distribution quotidienne de repas, l’asso L’île de Solidarité fait un appel aux dons alimentaires</a></li>
     </ol>
+    <li>Bfmtv</li>
+    <ol>
+      <li><a href="https://www.bfmtv.com/grand-lille/replay-emissions/bonjour-lille/sans-abri-a-lille-on-besoin-d-aide-materielle-et-financiere-rappelle-le-president-de-l-association-l-ile-de-solidarite_VN-202102090088.html">Sans-abri à Lille: "on besoin d'aide matérielle et financière", rappelle le président de l'association "L'Île de solidarité"</a></li>
+    </ol>
   </ul>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
