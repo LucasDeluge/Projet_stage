@@ -132,7 +132,7 @@ try {
     </div>
     <!--bouton -->
     <div id="btn-conect-container">
-      <button type="submit" class="btn btn-danger mt-4">Valider mon inscription</button>
+      <button type="submit" class="btn btn-danger mt-4">Valider votre message</button>
 
 
       <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
