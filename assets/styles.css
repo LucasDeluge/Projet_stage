@@ -1,15 +1,7 @@
-/* .nav-body {
-  background-image: url(./logo.jpg);
-  background-repeat: no-repeat;
-  background: cover;
-} */
-/* .nav-text {
-  display: block;
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
-  color: black;
-} */
+*{
+  margin:0;
+  padding:0; 
+}
 
 body {
   background: linear-gradient(
@@ -40,12 +32,11 @@ body {
   text-decoration: underline;
 }
 
-.logo {
-  
+footer {
   text-align: center;
   position:absolute;
   bottom:0;
   width:100%;
   padding-top:50px;
-  height:50px;
+  height:50px; 
 }
