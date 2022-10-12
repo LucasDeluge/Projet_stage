@@ -39,3 +39,7 @@ body {
 .don h1 {
   text-decoration: underline;
 }
+
+.logo {
+  text-align: center;
+}
