@@ -58,16 +58,16 @@ require_once './assets/pdo.php'
 </header>
 
 <body>
-  <h1>cette espace est reservée au bénévole</h1>
+  <h1>Cet espace est reservé aux bénévoles</h1>
 
-  <p>Cette espace est protégée par un mot de passe. Pour y acceder, veuillez saisir votre mot de passe ci-dessous :</p>
+  <p>Cet espace est protégé par un mot de passe. Pour y accéder, veuillez saisir votre mot de passe ci-dessous :</p>
 
   <form action="" id="connexion" method="post">
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="entrer votre mot de passe">
-      <label for="floatingPassword">mot de passe</label>
+      <label for="floatingPassword">Mot de passe</label>
     </div>
-    <button type="button" class="btn btn-primary">se conneter</button>
+    <button type="button" class="btn btn-primary">Se connecter</button>
     <?php
     $email = $_POST['email'] ?? null;
     $passeword = $_POST['passeword'] ?? null;
