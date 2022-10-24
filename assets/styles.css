@@ -7,10 +7,10 @@ body {
   overflow-x: hidden; 
 }
 
-.background {
+/* .background {
   background: url("https://www.liledesolidarite.fr/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-22-at-14.02.42-1024x768.jpeg")
       no-repeat center / cover fixed;
-}
+} */
 
 .home h1 {
   text-align: center;
