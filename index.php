@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+    <div class="background">  
     <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">L'île de Solidarité</a>
@@ -48,16 +48,9 @@
             </li>
 
           </ul>
-
-        </div>
-      </div>
     </div>
-      </div>
+  </div>
     </nav>
-  </header>
-
-  </nav>
-</header>
 <div class="home">
 <br>
 <br>
@@ -79,11 +72,7 @@
     </p>
     </div>
 
-    <footer>
-    <div class="logo">
-  <img src="./assets/logoids-modified.png">
-</div>
-</footer>
+  </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
