@@ -13,40 +13,47 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-    $mail->Username = 'deluge999@gmail.com';                     //SMTP username
-    $mail->Password = 'lfsoluhmlfagzcsi';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-    $mail->Port = 587;
+  //Server settings
+  $mail->SMTPDebug = SMTP::DEBUG_SERVER; //DEBUG_OFF          //Enable verbose debug output
+  $mail->isSMTP();                                            //Send using SMTP
+  $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+  $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+  $mail->Username = 'deluge999@gmail.com';                     //SMTP username
+  $mail->Password = 'lfsoluhmlfagzcsi';                               //SMTP password
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
+  $mail->Port = 587;
 
-    //Recipients
-    $mail->setFrom('test@association.net', 'Mailer'); // expediteur
-    $mail->addAddress('deluge999@gmail.com', 'Lucas AFCI');     //Add a recipient
-//    $mail->addAddress('ellen@example.com');               //Name is optional
-//    $mail->addReplyTo('info@example.com', 'Information');
-//    $mail->addCC('cc@example.com');
-//    $mail->addBCC('bcc@example.com');
+  // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+  // $mail->isSMTP();                                            //Send using SMTP
+  // $mail->Host = 'localhost';                     //Set the SMTP server to send through
+  // $mail->Port = 1025;
 
-    //Attachments
-//    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    $mail->addAttachment('');    //Optional name
+  //Recipients
+  $mail->setFrom('deluge999@gmail.com', 'Mailer'); // expediteur
+  // $mail->setFrom('lady@theo.com', 'Mailer'); // expediteur
+  $mail->addAddress('courbot.theo@gmail.com', 'theo et lucas AFCI');     //Add a recipient
+  // $mail->addAddress('non@pas.encore', 'theo et lucas AFCI');     //Add a recipient
+  //    $mail->addAddress('ellen@example.com');               //Name is optional
+  //    $mail->addReplyTo('info@example.com', 'Information');
+  //    $mail->addCC('cc@example.com');
+  //    $mail->addBCC('bcc@example.com');
 
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'demo envoi mail gmail';
-    $mail->Body = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+  //Attachments
+  //    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+  // $mail->addAttachment('');    //Optional name
 
-    //envoi du mail
-    $mail->send();
+  //Content
+  $mail->isHTML(true);                                  //Set email format to HTML
+  $mail->Subject = 'demo envoi mail gmail';
+  $mail->Body = 'This is the HTML message body <b>in bold!</b>';
+  $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    echo 'Message has been sent';
+  //envoi du mail
+  $mail->send();
+
+  echo 'Message has been sent';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
 
@@ -62,47 +69,49 @@ try {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">L'île de Solidarité</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.php">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./actualites.php">Actualités</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./participation.php">Participation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./donation.php">Donation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./press.php">Mention presse</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./partenariat.php">Partenariat</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./admin.php">Espace administrateur</a>
-          </li>
+<body class="p-3 text-light">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">L'île de Solidarité</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 
-        </ul>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.php">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./actualites.php">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./participation.php">Participation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./donation.php">Donation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./press.php">Mention presse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./partenariat.php">Partenariat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./admin.php">Espace administrateur</a>
+            </li>
 
+          </ul>
+
+        </div>
       </div>
-    </div>
-    </div>
-  </nav>
-</header>
+      </div>
+    </nav>
+  </header>
 
-<body>
+
   <h1>Contact</h1>
 
   <form>
