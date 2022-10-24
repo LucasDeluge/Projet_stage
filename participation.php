@@ -61,31 +61,31 @@
     Nous ne serons jamais « trop », l’île de solidarité compte aujourd’hui une centaine de bénévoles. Issus de tout horizons, tout milieux, mais partageant des mêmes valeurs. Chacun donne 1 heure, 1 jour, sans jugement. Les petits ruisseaux font les grandes rivières.
 
     Si vous souhaitez nous rejoindre, c’est avec plaisir, nous vous exposerons en quoi vous pourrez être utile à la société à travers nous :</p>
-  <h1>participer</h1>
+  <h1>Pour participer : </h1>
 
   <form>
     <!--nom -->
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Nom (obligatoire)</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre nom">
+      <label for="exampleInputEmail1" class="form-label mt-4">Nom (obligatoire) :</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
 
     </div>
     <!--email -->
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Adresse mail (obligatoire)</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre mail">
+      <label for="exampleInputEmail1" class="form-label mt-4">Adresse mail (obligatoire) :</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
 
     </div>
     <!--objet -->
     <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Objet</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="objet de votre mail">
+      <label for="exampleInputEmail1" class="form-label mt-4">Objet :</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Objet de votre e-mail">
 
     </div>
 
     <!--texte -->
     <div class="form-group">
-      <label for="exampleTextarea" class="form-label mt-4">Votre message</label>
+      <label for="exampleTextarea" class="form-label mt-4">Votre message :</label>
       <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
     </div>
     <!--bouton -->
@@ -107,5 +107,11 @@
   });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<footer>
+    <div class="logo">
+  <img src="./assets/logoids-modified.png">
+</div>
+</footer>
 
 </html>

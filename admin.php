@@ -62,7 +62,7 @@ require_once './assets/pdo.php'
 
   <h1>cette espace est reservée au bénévole</h1>
 
-  <p>Cette espace est protégée par un mot de passe. Pour y acceder, veuillez saisir votre mot de passe ci-dessous :</p>
+  <p>Cet espace est protégé par un mot de passe. Pour y accéder, veuillez saisir votre mot de passe ci-dessous :</p>
 
   <form action="" id="connexion" method="post">
     <div class="form-floating">
@@ -119,5 +119,11 @@ require_once './assets/pdo.php'
   </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<footer>
+  <div class="logo">
+    <img src="./assets/logoids-modified.png">
+  </div>
+</footer>
 
 </html>
