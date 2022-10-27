@@ -50,6 +50,13 @@ require_once './assets/pdo.php'
             <li class="nav-item">
               <a class="nav-link" href="./contact.php">Contact</a>
             </li>
+            <?php
+            if (isset($_SESSION['user']['username'])) {
+              echo '<li>';
+              echo '<a class="nav-link" href="./deco.php">deconnexion</a>';
+              echo '</li>';
+            }
+            ?>
 
           </ul>
 

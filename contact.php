@@ -1,4 +1,9 @@
 <?php
+session_start();
+require_once './assets/pdo.php'
+
+?>
+<?php
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -70,9 +75,9 @@ try {
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
 </head>
 
-<body class="p-3 text-light">
+<body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark  " id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">L'île de Solidarité</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,6 +107,13 @@ try {
             <li class="nav-item">
               <a class="nav-link" href="./admin.php">Espace administrateur</a>
             </li>
+            <?php
+            if (isset($_SESSION['user']['username'])) {
+              echo '<li>';
+              echo '<a class="nav-link" href="./deco.php">deconnexion</a>';
+              echo '</li>';
+            }
+            ?>
 
           </ul>
 

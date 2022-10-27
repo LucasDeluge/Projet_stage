@@ -17,9 +17,9 @@ require_once './assets/pdo.php'
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
 </head>
 
-<body>
+<body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark  " id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">L'île de Solidarité</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,16 @@ require_once './assets/pdo.php'
             <li class="nav-item">
               <a class="nav-link" href="./admin.php">Espace administrateur</a>
             </li>
+            <?php
+            if (isset($_SESSION['user']['username'])) {
+              echo '<li>';
+              echo '<a class="nav-link" href="./deco.php">deconnexion</a>';
+              echo '</li>';
+              echo '<li>';
+              echo '<a class="nav-link" href="./newactu.php">créé une actu</a>';
+              echo '</li>';
+            }
+            ?>
 
           </ul>
 
@@ -58,15 +68,40 @@ require_once './assets/pdo.php'
       </div>
     </nav>
   </header>
+  <?php
+  if (isset($_SESSION["message"])) {
+    echo "<div id='nav'>$_SESSION[message] ";
+    $_SESSION["message"] = null;
+  }
+
+  // require_once './new-article.php';
+  // $pseudo = $_SESSION['article']['id_utilisateur'];
+  foreach ($pdo->query("select * from article")->fetchAll() as $key => $actu) {
+    echo " <div id='actu-container'>
+    <div id='titreactu'> {$actu['titre']}</div>
+    <div id='actu'> {$actu['texte']}</div>
+    <div id'img' id='container-img'> <img src='{$actu['image']}' id='img-actu'> </div>
+    <div id='container-btn-actu' >
+    
+    <form action='./assets/delete.php' method='post'> 
+      <button type='submit' id='btn-actu' name='id' value='{$actu['id']}'> supprimer </button> </form>
+      </div>
+    <div id='container-btn-actu' >
+    <form action='./asset-blog/update.php' method='post'> 
+
+    <button type='submit' id='btn-actu'> modifier </button> </form>
+      </div>
+    
+
+    </div> ";
+  };
+
+  ?>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-<footer>
-    <div class="logo">
-  <img src="./assets/logoids-modified.png">
-</div>
-</footer>
+
 
 </html>

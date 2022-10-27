@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once './assets/pdo.php'
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,6 +48,13 @@
             <li class="nav-item">
               <a class="nav-link" href="./admin.php">Espace administrateur</a>
             </li>
+            <?php
+            if (isset($_SESSION['user']['username'])) {
+              echo '<li>';
+              echo '<a class="nav-link" href="./deco.php">deconnexion</a>';
+              echo '</li>';
+            }
+            ?>
 
           </ul>
 
@@ -76,9 +88,9 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <footer>
-    <div class="logo">
-  <img src="./assets/logoids-modified.png">
-</div>
+  <div class="logo">
+    <img src="./assets/logoids-modified.png">
+  </div>
 </footer>
 
 </html>

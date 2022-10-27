@@ -1,15 +1,61 @@
-*{
-  margin:0;
-  padding:0; 
+* {
+  margin: 0;
+  padding: 0;
 }
+#nav {
+  background-color: rgba(255, 6, 6, 0.579);
+}
+#background-body {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./IMGsite/Fondbody.webp) no-repeat center / cover fixed;
+  height: 100vh;
+}
+#logo-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    no-repeat center / cover fixed;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+/* index */
+#logo {
+  width: 20%;
+  height: 20%;
+}
+#img-index {
+  width: 40%;
+  height: 40%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#titre {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+
+  /* text-shadow: 10px 10px 5px rgba(186, 0, 0, 0.71); */
+}
+#text {
+  color: white;
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+/* @media screen and (max-width: 860px) {
+  #logo {
+    width: 15vw;
+    height: 10rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  #logo {
+    width: 15vw;
+    height: 8rem;
+  }
+} */
 
 body {
-  overflow-x: hidden; 
-}
-
-.background {
-  background: url("https://www.liledesolidarite.fr/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-22-at-14.02.42-1024x768.jpeg")
-      no-repeat center / cover fixed;
+  overflow-x: hidden;
 }
 
 .home h1 {
@@ -30,11 +76,77 @@ body {
   text-decoration: underline;
 }
 
-.logo {
+/* .logo {
   text-align: center;
   position: fixed;
   bottom: 270px;
   width:100%;
   padding-top:50px;
   height:50px; 
+} */
+/* actu */
+#actu-container {
+  background-color: rgba(83, 90, 90, 0.498);
+  margin: 2rem 5rem;
+
+  padding: 1rem;
+  border: solid 2px rgba(237, 8, 8, 0.77);
+}
+#titreactu {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+}
+#actu {
+  max-width: 100%;
+  color: white;
+  font-size: 1.5rem;
+}
+#img-actu {
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+}
+#container-btn-actu {
+  display: inline-block;
+}
+#btn-actu {
+  font-size: 1.3rem;
+
+  background-color: rgba(83, 90, 90, 0.498);
+  border: solid 2px rgba(159, 40, 40, 0.64);
+  border-radius: 5px;
+  margin-right: 2rem;
+  padding: 5px;
+
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+#btn-actu:hover {
+  font-size: 1.4rem;
+}
+/* don */
+#text-don {
+  color: rgb(255, 255, 252);
+  text-decoration: underline;
+}
+#liens-don {
+  color: red;
+}
+#containeur-lien {
+  text-align: center;
+  margin: 0 auto;
+}
+#containeur-video {
+  text-align: center;
+}
+#container-form-aide {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+#form-aide {
+  padding: 3;
+  text-align: center;
 }
