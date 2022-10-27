@@ -60,7 +60,6 @@ require_once './assets/pdo.php'
 
         </div>
       </div>
-      </div>
     </nav>
   </header>
 

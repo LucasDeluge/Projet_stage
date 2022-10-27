@@ -67,7 +67,7 @@ require_once './assets/pdo.php'
   </header>
 
 
-  <h1>cette espace est reservée au bénévole</h1>
+  <h1>Cet espace est reservé aux bénévoles</h1>
 
   <p>Cet espace est protégé par un mot de passe. Pour y accéder, veuillez saisir votre mot de passe ci-dessous :</p>
 
@@ -80,7 +80,7 @@ require_once './assets/pdo.php'
       <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="votre mdp">
       <label for="floatingPassword">password</label>
     </div>
-    <button type="submit" class="btn btn-primary mt-3">se conneter</button>
+    <button type="submit" class="btn btn-primary mt-3">Se connecter</button>
     <?php
 
     $login = $_POST['login'] ?? null;
