@@ -18,9 +18,9 @@ require_once './assets/pdo.php'
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
 </head>
 
-<body class="p-3 text-light">
+<body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">L'île de Solidarité</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,20 +67,26 @@ require_once './assets/pdo.php'
   </header>
 
 
-  <h1>Cet espace est reservé aux bénévoles</h1>
+  <h1 id="titre">Cet espace est reservé aux bénévoles</h1>
 
-  <p>Cet espace est protégé par un mot de passe. Pour y accéder, veuillez saisir votre mot de passe ci-dessous :</p>
+  <p id="text">Cet espace est protégé par un mot de passe. Pour y accéder, veuillez saisir votre mot de passe ci-dessous :</p>
 
   <form action="" id="connexion" method="post">
     <div class="form-floating">
-      <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="votre log 1">
-      <label for="floatingLogin">Login</label>
+      <div id="form-message-container">
+        <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="votre log 1">
+        <label for="floatingLogin" id="text">Nom</label>
+      </div>
     </div>
     <div class="form-floating mt-3">
-      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="votre mdp">
-      <label for="floatingPassword">password</label>
+      <div id="form-message-container">
+        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="votre mdp">
+        <label for="floatingPassword" id="text">mot de passe</label>
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary mt-3">Se connecter</button>
+    <div id="btn-aide-container">
+      <button type="submit" class="btn btn " id="btn-aide">Se connecter</button>
+    </div>
     <?php
 
     $login = $_POST['login'] ?? null;
@@ -101,7 +107,7 @@ require_once './assets/pdo.php'
         $user = $asso->fetch();
         //mdp identique?
         if (password_verify($password, $user['password'])) {
-          echo '<div> connexion reussite </div>';
+          echo '<div id="titre"> connexion reussite </div>';
           $_SESSION['user'] = $user;
         }
       }
@@ -127,10 +133,8 @@ require_once './assets/pdo.php'
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-<footer>
-  <div class="logo">
-    <img src="./assets/logoids-modified.png">
-  </div>
-</footer>
+<div id="logo-container">
+  <img src="./assets/IMGsite/logo.jpg" alt="" id="logo">
+</div>
 
 </html>

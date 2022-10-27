@@ -124,39 +124,45 @@ try {
   </header>
 
 
-  <h1>Contact</h1>
+  <h1 id="titre">Contact</h1>
 
   <form>
-    <!--nom -->
-    <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Nom (obligatoire)</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre nom">
+    <div id="container-form-aide">
+      <!--nom -->
+      <div class="form-group">
+        <label for="exampleInputEmail1" id="text">Nom (obligatoire)</label>
+        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="votre nom">
 
-    </div>
-    <!--email -->
-    <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Adresse mail (obligatoire)</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="votre mail">
-      <small id="emailHelp" class="form-text text-muted">pour obtenir une reponse</small>
-    </div>
-    <!--objet -->
-    <div class="form-group">
-      <label for="exampleInputEmail1" class="form-label mt-4">Objet</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="objet de votre mail">
+      </div>
+      <!--email -->
+      <div class="form-group">
+        <label for="exampleInputEmail1" id="text">Adresse mail (obligatoire)</label>
+        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="votre mail">
 
+      </div>
+      <!--objet -->
+      <div class="form-group">
+        <label for="exampleInputEmail1" id="text">Objet</label>
+        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="objet de votre mail">
+
+      </div>
     </div>
 
     <!--texte -->
     <div class="form-group">
-      <label for="exampleTextarea" class="form-label mt-4">Votre message</label>
-      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      <div id="text">
+        <label for="exampleTextarea">Votre message</label>
+      </div>
+      <div id="form-message-container">
+        <textarea id="form-message" class="form-control" rows="3"></textarea>
+      </div>
     </div>
     <!--bouton -->
-    <div id="btn-conect-container">
-      <button type="submit" class="btn btn-danger mt-4">Valider votre message</button>
+    <div id="btn-aide-container">
+      <button type="submit" id="btn-aide">Valider votre message</button>
+    </div>
 
-
-      <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+    <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
   </form>
   </section>
   <script src="https://www.google.com/recaptcha/api.js?render=6LeEiKIgAAAAAJYQrjb8ilZIxYEsYwrlPr1aUeCh"></script>
@@ -175,10 +181,6 @@ try {
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-<footer>
-  <div class="logo">
-    <img src="./assets/logoids-modified.png">
-  </div>
-</footer>
+
 
 </html>

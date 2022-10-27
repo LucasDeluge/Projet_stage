@@ -87,9 +87,9 @@ require_once './assets/pdo.php'
       <button type='submit' id='btn-actu' name='id' value='{$actu['id']}'> supprimer </button> </form>
       </div>
     <div id='container-btn-actu' >
-    <form action='./asset-blog/update.php' method='post'> 
+    <form action='./assets/update.php' method='post'> 
 
-    <button type='submit' id='btn-actu'> modifier </button> </form>
+    <button type='submit' id='btn-actu' name='id' value='{$actu['id']}'> modifier </button> </form>
       </div>
     
 

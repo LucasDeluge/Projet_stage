@@ -16,7 +16,7 @@ require_once './assets/pdo.php'
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
 </head>
 
-<body>
+<body id="background-body">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
       <div class="container-fluid">
@@ -63,33 +63,40 @@ require_once './assets/pdo.php'
     </nav>
   </header>
 
-  <h1>Nos partenaires</h1>
+  <h1 id="titre">Nos partenaires</h1>
 
   <ul>
-    <li>Mairie de Lille</li>
+    <li id="text">Mairie de Lille</li>
     <ul>
-      <a href="https://www.lille.fr/Votre-Mairie/Lille-en-bref/Une-ville-attentive-a-chacun/La-solidarite">La solidarité</a>
+      <div id="containeur-lien">
+        <a href="https://www.lille.fr/Votre-Mairie/Lille-en-bref/Une-ville-attentive-a-chacun/La-solidarite" id="lien">La solidarité</a>
+      </div>
     </ul>
   </ul>
   <ul>
-    <li>Fédération des Acteurs de la solidarité</li>
+    <div id="containeur-lien">
+      <li id="text">Fédération des Acteurs de la solidarité</li>
+    </div>
     <ul>
-      <a href="https://www.federationsolidarite.org/">Contre les exclusions pour la solidarité </a>
+      <div id="containeur-lien">
+        <a href="https://www.federationsolidarite.org/" id="lien">Contre les exclusions pour la solidarité </a>
+      </div>
     </ul>
   </ul>
   <ul>
-    <li>Engagement solidaire</li>
+    <li id="text">Engagement solidaire</li>
     <ul>
-      <a href="https://www.engagement-solidaire.fr/">Au coeur de la solidarité</a>
+      <div id="containeur-lien">
+        <a href="https://www.engagement-solidaire.fr/" id="lien">Au coeur de la solidarité</a>
+      </div>
     </ul>
   </ul>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<footer>
-  <div class="logo">
-    <img src="./assets/logoids-modified.png">
-  </div>
-</footer>
+
+<div id="logo-container">
+  <img src="./assets/IMGsite/logo.jpg" alt="" id="logo">
+</div>
 
 </html>

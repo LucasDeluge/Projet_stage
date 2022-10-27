@@ -77,17 +77,21 @@ require_once './assets/pdo.php'
   <div id="container-form-aide">
     <form>
       <!--nom -->
-      <div class="form-group">
+      <div>
         <label for="exampleInputEmail1" id="text">Nom (obligatoire) :</label>
         <input type="email" id="form-aide" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
       </div>
 
 
       <!--email -->
-      <div class="form-group">
+      <div>
         <label for="exampleInputEmail1" id="text">Adresse mail ou numero de telephone :</label>
         <input type="email" id="form-aide" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail ou telephone">
       </div>
+  </div>
+
+  <div id="btn-aide-container">
+    <button type="submit" id="btn-aide">Valider votre message</button>
   </div>
 
 
