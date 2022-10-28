@@ -79,14 +79,14 @@ require_once './assets/pdo.php'
   foreach ($pdo->query("select * from article")->fetchAll() as $key => $actu) {
     echo " <div id='actu-container'>
     <div id='titreactu'> {$actu['titre']}</div>
-    <div id='actu'> {$actu['texte']}</div>
     <div id'img' id='container-img'> <img src='{$actu['image']}' id='img-actu'> </div>
+    <div id='actu'> {$actu['texte']}</div>
     <div id='container-btn-actu' >
     
     <form action='./assets/delete.php' method='post'> 
       <button type='submit' id='btn-actu' name='id' value='{$actu['id']}'> supprimer </button> </form>
       </div>
-    <div id='container-btn-actu' >
+    
     <form action='./assets/update.php' method='post'> 
 
     <button type='submit' id='btn-actu' name='id' value='{$actu['id']}'> modifier </button> </form>
