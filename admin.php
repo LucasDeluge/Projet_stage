@@ -74,13 +74,13 @@ require_once './assets/pdo.php'
   <form action="" id="connexion" method="post">
     <div class="form-floating">
       <div id="form-message-container">
-        <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="votre log 1">
+        <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="votre login">
         <label for="floatingLogin" id="text">Nom</label>
       </div>
     </div>
     <div class="form-floating mt-3">
       <div id="form-message-container">
-        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="votre mdp">
+        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="votre mot de passe">
         <label for="floatingPassword" id="text">mot de passe</label>
       </div>
     </div>
@@ -107,7 +107,7 @@ require_once './assets/pdo.php'
         $user = $asso->fetch();
         //mdp identique?
         if (password_verify($password, $user['password'])) {
-          echo '<div id="titre"> connexion reussite </div>';
+          header('location:actualites.php');
           $_SESSION['user'] = $user;
         }
       }

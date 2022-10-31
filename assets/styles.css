@@ -102,13 +102,22 @@ body {
   color: white;
   font-size: 1.5rem;
 }
+#container-img {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1rem;
+  max-width: 50%;
+  max-height: 40%;
+}
 #img-actu {
   width: 50%;
   height: 30%;
   margin: 0 auto;
 }
 #container-btn-actu {
-  display: inline-block;
+  display: flex;
+
+  margin: 2rem;
 }
 #btn-actu {
   font-size: 1.3rem;
@@ -118,7 +127,7 @@ body {
   border-radius: 5px;
   margin-right: 2rem;
   padding: 5px;
-
+  text-align: center;
   margin-top: 1rem;
   margin-right: 1rem;
 }

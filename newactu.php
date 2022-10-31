@@ -16,9 +16,9 @@ require_once './assets/pdo.php'
   <link rel="stylesheet" href="./assets/bootstrap.min.css">
 </head>
 
-<body>
+<body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">L'île de Solidarité</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,21 +70,21 @@ require_once './assets/pdo.php'
   </header>
 
   <form action="" id="new-actu" method="POST" enctype="multipart/form-data">
-    <div id="container-title">
-      <label for="input-title" id="add-title">titre </label>
-      <input type="text" id="input-title" name="user_titre" required placeholder="votre titre" />
+    <div class="mb-3">
+      <label for="input-title" id="titre">titre </label>
+      <input type="text" class="form-control" id="text" name="user_titre" required placeholder="votre titre" />
     </div>
 
-    <div id="container-message">
-      <label for="message-input" id="add-message">message</label>
-      <textarea id="message-input" name="user_message" required></textarea>
+    <div class="mb-3">
+      <label for="message-input" id="titre">message</label>
+      <textarea id="imageInput" class="form-control" name="user_message" required></textarea>
     </div>
 
-    <h4 id="add-categorie">choix de l'image</h4>
-    <input type="file" id="pick" name="user_pick">
+    <h4 id="add-categorie" class="form-label">choix de l'image</h4>
+    <input type="file" id="pick" class="form-control" name="user_pick">
 
-    <div id="btn-add-container">
-      <button type="submit" id="btn-add-actu">valider mon actu</button>
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary" id="btn-add-article">valider mon actu</button>
 
       <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
   </form>
