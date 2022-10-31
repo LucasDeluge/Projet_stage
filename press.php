@@ -18,7 +18,7 @@ require_once './assets/pdo.php'
 
 <body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">L'île de Solidarité</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
