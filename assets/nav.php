@@ -35,7 +35,7 @@
             <a class="nav-link" href="./donation.php">Donation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./press.php">Mention press</a>
+            <a class="nav-link" href="./press.php">Mention presse</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./participation.php">Partenariat</a>
