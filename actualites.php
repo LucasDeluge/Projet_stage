@@ -32,7 +32,7 @@ require_once './assets/pdo.php'
 
   // require_once './new-article.php';
   // $pseudo = $_SESSION['article']['id_utilisateur'];
-  foreach ($pdo->query("select * from article")->fetchAll() as $key => $actu) {
+  foreach ($pdo->query("select * from articles")->fetchAll() as $key => $actu) {
 
 
     if (isset($_SESSION['user']['username'])) {
