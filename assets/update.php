@@ -11,6 +11,11 @@
 </head>
 
 <body id="body-update">
+  <header>
+    <?php
+    require_once './assets/nav.php'
+    ?>
+  </header>
   <main class="container">
     <h1>Modifier un article</h1>
     <?php

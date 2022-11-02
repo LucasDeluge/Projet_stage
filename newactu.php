@@ -18,75 +18,33 @@ require_once './assets/pdo.php'
 
 <body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">L'île de Solidarité</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="./index.php">Accueil</a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./actualites.php">Actualités</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./participation.php">Participation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./donation.php">Donation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./press.php">Mention press</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./participation.php">Partenariat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.php">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./admin.php">Espace administrateur</a>
-            </li>
-            <?php
-            if (isset($_SESSION['user']['username'])) {
-              echo '<li>';
-              echo '<a class="nav-link" href="./deco.php">deconnexion</a>';
-              echo '</li>';
-            }
-            ?>
-
-          </ul>
-
-        </div>
-      </div>
-
-      </div>
-    </nav>
+    <?php
+    require_once './assets/nav.php'
+    ?>
   </header>
 
   <form action="" id="new-actu" method="POST" enctype="multipart/form-data">
-    <div class="mb-3">
-      <label for="input-title" id="titre">titre </label>
-      <input type="text" class="form-control" id="text" name="user_titre" required placeholder="votre titre" />
+    <div id="form-message-container" class="mb-3 ">
+
+      <h4 for="input-title" id="titre">titre </h4>
+      <input type="text" class="form-control  mr-3 mpl-3" name="user_titre" required placeholder="votre titre" />
+
     </div>
 
-    <div class="mb-3">
-      <label for="message-input" id="titre">message</label>
+    <div id="form-message-container" class="mb-3 ">
+      <h4 for="message-input" id="titre">message</h4>
       <textarea id="imageInput" class="form-control" name="user_message" required></textarea>
     </div>
 
-    <h4 id="add-categorie" class="form-label">choix de l'image</h4>
-    <input type="file" id="pick" class="form-control" name="user_pick">
+    <div id="form-message-container" class="mb-3 ">
+      <h4 id="titre">choix de l'image</h4>
+      <input type="file" id="pick" class="form-control" name="user_pick">
+    </div>
 
-    <div class="mb-3">
-      <button type="submit" class="btn btn-primary" id="btn-add-article">valider mon actu</button>
-
-      <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
+    <div id="btn-aide-container">
+      <button type="submit" class="btn btn-primary" id="btn-aide">valider mon actu</button>
+    </div>
+    <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
   </form>
 
 

@@ -1,6 +1,7 @@
 <?php
+
 //Permet d'afficher les erreurs
-ini_set('display_errors', 'On');
+ini_set('display_errors', 'off');
 error_reporting(E_ALL);
 
 $dsn = 'mysql:dbname=association;host=localhost;port=3306;charset=utf8';

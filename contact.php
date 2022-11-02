@@ -77,50 +77,9 @@ try {
 
 <body id="background-body">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark  " id="nav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">L'île de Solidarité</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="./index.php">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./actualites.php">Actualités</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./participation.php">Participation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./donation.php">Donation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./press.php">Mention presse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./partenariat.php">Partenariat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./admin.php">Espace administrateur</a>
-            </li>
-            <?php
-            if (isset($_SESSION['user']['username'])) {
-              echo '<li>';
-              echo '<a class="nav-link" href="./deco.php">deconnexion</a>';
-              echo '</li>';
-            }
-            ?>
-
-          </ul>
-
-        </div>
-      </div>
-      </div>
-    </nav>
+    <?php
+    require_once './assets/nav.php'
+    ?>
   </header>
 
 
