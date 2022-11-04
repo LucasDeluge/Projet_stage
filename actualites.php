@@ -32,7 +32,7 @@ require_once './assets/pdo.php'
 
   // require_once './new-article.php';
   // $pseudo = $_SESSION['article']['id_utilisateur'];
-  foreach ($pdo->query("select * from articles")->fetchAll() as $key => $actu) {
+  foreach ($pdo->query("select * from article")->fetchAll() as $key => $actu) {
 
 
     if (isset($_SESSION['user']['username'])) {
@@ -62,10 +62,13 @@ require_once './assets/pdo.php'
 
   ?>
 
+  <div id="icone-container">
+    <i class="fa-solid fa-arrow-up" id="arrow"></i>
+  </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
+<script src="./assets/icon.js"></script>
 
 
 </html>

@@ -33,13 +33,13 @@ require_once './assets/pdo.php'
   <form action="" id="connexion" method="post">
     <div class="form-floating">
       <div id="form-message-container">
-        <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="votre login">
+        <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="votre login" required>
         <label for="floatingLogin" id="text">Nom</label>
       </div>
     </div>
     <div class="form-floating mt-3">
       <div id="form-message-container">
-        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="votre mot de passe">
+        <input type="password" class="form-control" id="floatingPassword" name="password" required placeholder="votre mot de passe">
         <label for="floatingPassword" id="text">mot de passe</label>
       </div>
     </div>

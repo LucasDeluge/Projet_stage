@@ -90,19 +90,19 @@ try {
       <!--nom -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Nom (obligatoire)</label>
-        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="votre nom">
+        <input type="text" id="form-aide" aria-describedby="emailHelp" placeholder="votre nom" required>
 
       </div>
       <!--email -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Adresse mail (obligatoire)</label>
-        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="votre mail">
+        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="votre mail" required>
 
       </div>
       <!--objet -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Objet</label>
-        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="objet de votre mail">
+        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="objet de votre mail" required>
 
       </div>
     </div>

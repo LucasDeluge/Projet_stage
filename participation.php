@@ -38,14 +38,14 @@ require_once './assets/pdo.php'
       <!--nom -->
       <div>
         <label for="exampleInputEmail1" id="text">Nom (obligatoire) :</label>
-        <input type="email" id="form-aide" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+        <input type="text" id="form-aide" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom" required>
       </div>
 
 
       <!--email -->
       <div>
         <label for="exampleInputEmail1" id="text">Adresse mail ou numero de telephone :</label>
-        <input type="email" id="form-aide" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail ou telephone">
+        <input type="email" id="form-aide" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail ou telephone" required>
       </div>
   </div>
 
