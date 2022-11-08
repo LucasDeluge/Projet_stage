@@ -13,7 +13,7 @@
 <body id="body-update">
   <header>
     <?php
-    require_once './assets/nav.php'
+    require_once './nav.php'
     ?>
   </header>
   <main class="container">
@@ -160,7 +160,7 @@
     <form action="" method="post" enctype='multipart/form-data'>
       <div class="mb-3">
         <label for="mon Article" class="form-label">titre</label>
-        <input type="e" class="form-control" id="titre" name="titre" placeholder="titre" value="<?php echo $actu['titre'] ?>">
+        <input type="e" class="form-control" id="texte" name="titre" placeholder="titre" value="<?php echo $actu['titre'] ?>">
       </div>
 
       <div class="mb-3">
@@ -170,7 +170,7 @@
 
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Image</label>
-        <input type="file" class="form-control" id="imageInput" name="user_pick" placeholder=<?php echo $actu['image'] ?> value="<?php echo $actu['image'] ?>">
+        <input type="file" class="form-control" id="texte" name="user_pick" placeholder=<?php echo $actu['image'] ?> value="<?php echo $actu['image'] ?>">
       </div>
       <input type="hidden" name="id" value="<?php echo $actu['id'] ?>">
       <button type="submit" class="btn btn-primary">Ajouter</button>

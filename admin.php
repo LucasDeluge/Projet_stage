@@ -72,9 +72,10 @@ require_once './assets/pdo.php'
       }
     } catch (PDOException $pdoError) {
       echo "Erreur login et/ou mdp";
-    } catch (Exception $e) {
-      echo "Erreur " . $e->getMessage();
     }
+    // } catch (Exception $e) {
+    //   echo "Erreur " . $e->getMessage();
+    // }
 
 
     ?>
