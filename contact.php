@@ -12,19 +12,19 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
   //Server settings
-  $mail->SMTPDebug = SMTP::DEBUG_SERVER; //DEBUG_OFF          //Enable verbose debug output
+  $mail->SMTPDebug = SMTP::DEBUG_OFF; //DEBUG_SERVER          //Enable verbose debug output
   $mail->isSMTP();                                            //Send using SMTP
   $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
   $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-  $mail->Username = 'deluge999@gmail.com';                     //SMTP username
-  $mail->Password = 'lfsoluhmlfagzcsi';                               //SMTP password
+  $mail->Username = 'theo.courbot59@gmail.com';                     //SMTP username
+  $mail->Password = 'fkgghbifhrxgsked';                               //SMTP password
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
   $mail->Port = 587;
 
@@ -34,9 +34,9 @@ try {
   // $mail->Port = 1025;
 
   //Recipients
-  $mail->setFrom('deluge999@gmail.com', 'Mailer'); // expediteur
+  $mail->setFrom('courbot.theo@gmail.com', 'Mailer'); // expediteur
   // $mail->setFrom('lady@theo.com', 'Mailer'); // expediteur
-  $mail->addAddress('courbot.theo@gmail.com', 'theo et lucas AFCI');     //Add a recipient
+  $mail->addAddress('theo.courbot59@gmail.com', 'theo et lucas AFCI');     //Add a recipient
   // $mail->addAddress('non@pas.encore', 'theo et lucas AFCI');     //Add a recipient
   //    $mail->addAddress('ellen@example.com');               //Name is optional
   //    $mail->addReplyTo('info@example.com', 'Information');
@@ -85,7 +85,7 @@ try {
 
   <h1 id="titre">Contact</h1>
 
-  <form>
+  <form action="#" method="POST">
     <div id="container-form-aide">
       <!--nom -->
       <div class="form-group">
@@ -102,7 +102,7 @@ try {
       <!--objet -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Objet</label>
-        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="objet de votre mail" required>
+        <input type="text" id="form-aide" aria-describedby="emailHelp" placeholder="objet de votre mail" required>
 
       </div>
     </div>

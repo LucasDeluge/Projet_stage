@@ -25,10 +25,10 @@ require_once './assets/pdo.php'
     ?>
   </header>
   <?php
-  if (isset($_SESSION["message"])) {
-    echo "<div id='nav'>$_SESSION[message] ";
-    $_SESSION["message"] = null;
-  }
+  // if (isset($_SESSION["message"])) {
+  //   echo "<div id='nav'>$_SESSION[message] ";
+  //   $_SESSION["message"] = null;
+  // }
 
   // require_once './new-article.php';
   // $pseudo = $_SESSION['article']['id_utilisateur'];
