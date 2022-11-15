@@ -23,25 +23,16 @@ try {
   $mail->isSMTP();                                            //Send using SMTP
   $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
   $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-  $mail->Username = 'theo.courbot59@gmail.com';                     //SMTP username
-  $mail->Password = 'fkgghbifhrxgsked';                               //SMTP password
+  $mail->Username = 'deluge999@gmail.com';                     //SMTP username
+  $mail->Password = 'uhknlnszfbmknpip';                               //SMTP password
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
   $mail->Port = 587;
 
-  // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-  // $mail->isSMTP();                                            //Send using SMTP
-  // $mail->Host = 'localhost';                     //Set the SMTP server to send through
-  // $mail->Port = 1025;
-
   //Recipients
-  $mail->setFrom('courbot.theo@gmail.com', 'Mailer'); // expediteur
+  $mail->setFrom('deluge999@gmail.com', 'Mailer'); // expediteur
   // $mail->setFrom('lady@theo.com', 'Mailer'); // expediteur
-  $mail->addAddress('theo.courbot59@gmail.com', 'theo et lucas AFCI');     //Add a recipient
+  $mail->addAddress('deluge999@gmail.com', 'theo et lucas AFCI');     //Add a recipient
   // $mail->addAddress('non@pas.encore', 'theo et lucas AFCI');     //Add a recipient
-  //    $mail->addAddress('ellen@example.com');               //Name is optional
-  //    $mail->addReplyTo('info@example.com', 'Information');
-  //    $mail->addCC('cc@example.com');
-  //    $mail->addBCC('bcc@example.com');
 
   //Attachments
   //    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
@@ -49,7 +40,7 @@ try {
 
   //Content
   $mail->isHTML(true);                                  //Set email format to HTML
-  $mail->Subject = 'demo envoi mail gmail';
+  $mail->Subject = 'test';
   $mail->Body = 'This is the HTML message body <b>in bold!</b>';
   $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
@@ -90,19 +81,19 @@ try {
       <!--nom -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Nom (obligatoire)</label>
-        <input type="text" id="form-aide" aria-describedby="emailHelp" placeholder="votre nom" required>
+        <input type="text" id="form-aide" aria-describedby="emailHelp" name="name" placeholder="votre nom" required>
 
       </div>
       <!--email -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Adresse mail (obligatoire)</label>
-        <input type="email" id="form-aide" aria-describedby="emailHelp" placeholder="votre mail" required>
+        <input type="email" id="form-aide" aria-describedby="emailHelp" name="email" placeholder="votre mail" required>
 
       </div>
       <!--objet -->
       <div class="form-group">
         <label for="exampleInputEmail1" id="text">Objet</label>
-        <input type="text" id="form-aide" aria-describedby="emailHelp" placeholder="objet de votre mail" required>
+        <input type="text" id="form-aide" aria-describedby="emailHelp" name="objet" placeholder="objet de votre mail" required>
 
       </div>
     </div>
